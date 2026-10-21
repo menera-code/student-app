@@ -28,7 +28,8 @@ def main():
         student_id = get_non_empty("Enter Student ID: ")
 
         grades = []
-        for i in range(1, 6):
+        # Changed to range(1, 8) for 7 grades
+        for i in range(1, 8):
             grades.append(get_valid_grade(f"Enter Grade {i}: "))
 
         average = sum(grades) / len(grades)
